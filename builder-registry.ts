@@ -2,9 +2,7 @@
 import { builder, Builder } from "@builder.io/react";
 import Counter from "./components/Counter/Counter";
 import Footer from "./components/Footer/footer";
-import HeroBanner from "./components/HeroBanner/heroBanner";
 import Navigation from "./components/Navigation/Navigation";
-import { Heading } from "./components/Common/Heading";
 import dynamic from "next/dynamic";
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
@@ -60,19 +58,19 @@ Builder.registerComponent(
   }
 );
 
-Builder.registerComponent(Heading, {
-  name: "Heading",
-  inputs: [
-    { name: "name", type: "text", defaultValue: "Enter Heading Title" },
-    {
-      name: "type",
-      type: "select",
-      options: ["h1", "h2", "h3"],
-      defaultValue: "h1",
-    },
-    { name: "content", type: "blocks" },
-  ],
-});
+// Builder.registerComponent(Heading, {
+//   name: "Heading",
+//   inputs: [
+//     { name: "name", type: "text", defaultValue: "Enter Heading Title" },
+//     {
+//       name: "type",
+//       type: "select",
+//       options: ["h1", "h2", "h3"],
+//       defaultValue: "h1",
+//     },
+//     { name: "content", type: "blocks" },
+//   ],
+// });
 
 Builder.register("insertMenu", {
   name: "PRFT Components",

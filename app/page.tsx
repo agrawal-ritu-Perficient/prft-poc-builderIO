@@ -1,4 +1,4 @@
-import { fetchPageData_GQ } from "@/lib/graphql-api";
+//import { fetchPageData_GQ } from "@/lib/graphql-api";
 import { RenderBuilderContent } from "../components/builder";
 import { getPageData } from "@/lib/builder-sdk-api";
 
