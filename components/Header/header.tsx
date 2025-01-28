@@ -18,7 +18,6 @@ const Header = () => {
         throw new Error("Failed to fetch");
       }
       const navLinks = await response.json();
-      console.log("links", navLinks);
       setNavLinks(navLinks?.data.links);
     };
     getData();

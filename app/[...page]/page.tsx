@@ -7,7 +7,7 @@ export default async function Page(props: { params: PageProps }) {
   const { page } = await props.params;
   const urlPath = "/" + (page.join("/") || "");
   const content = await getPageData("page", urlPath);
-
+  //console.log("content",content)
   return (
     <>
       {/* Render the Builder page */}

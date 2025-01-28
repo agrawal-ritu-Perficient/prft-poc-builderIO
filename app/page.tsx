@@ -5,9 +5,9 @@ import { getPageData } from "@/lib/builder-sdk-api";
 export default async function Home() {
   const builderModelName = "page";
   const homepageContent = await getPageData("page", "/");
-  const pageData= await fetchPageData_GQ();
+  //const pageData= await fetchPageData_GQ();
   //const navigationLinks = await fetchNavigationLinks();
-  console.log("pageData",pageData)
+  console.log("pageData",homepageContent)
   return (
     <>
       {/* <Navigation/> */}
